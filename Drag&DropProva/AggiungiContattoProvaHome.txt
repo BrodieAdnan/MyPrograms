@@ -1,0 +1,11 @@
+<a href="addContatto.jsp">Aggiungi nuovo contatto</a>
+        <%
+            ArrayList<Contatto> contatti = account.getListContatti();
+            for (int i = 0; i < contatti.size(); i++) {
+                out.println(
+                        "<p>" + contatti.get(i)
+                        + " <a href=doViewContatto.jsp?idContatto=" + contatti.get(i).getIDcontatto() + ">"
+                        + " visualizza contatto" + "</a></p>"
+                );
+            }
+        %>

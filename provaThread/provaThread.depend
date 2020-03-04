@@ -1,0 +1,5 @@
+# depslib dependency file v1.0
+1507283642 source:e:\4ib\tpsit\provathread\main.cpp
+	<iostream>
+	<thread>
+
